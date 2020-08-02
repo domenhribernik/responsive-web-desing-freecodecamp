@@ -1,0 +1,145 @@
+body {
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+#nav-bar, #nav-bar div, div.img-div {
+  display: inline-block;
+}
+.img-div {
+  margin-left: 35px;
+}
+img {
+  height: 70px;
+}
+nav#nav-bar {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-link {
+  font-size: 1.3rem;
+  color: white;
+  font-style: none;
+  text-decoration: none;
+}
+div.content {
+  margin: 150px 
+}
+div.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:  auto auto auto;
+  grid-template-areas: "h1 iframe"
+                       "p iframe"
+                       "form iframe";
+  gap: 0px 40px;
+}
+p {
+  grid-area: p;
+}
+h1 {
+  display: inline-block;
+  grid-area: h1;
+}
+iframe {
+  grid-area: iframe;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 977px; 
+  height: 550px;
+}
+form {
+  grid-area: form;
+}
+input {
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  border: 3px solid black;
+  box-shadow: 2px 2px 1px 1px black;
+  outline: none;
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+input[type="submit"], input[type="button"] {
+  background: orange;
+}
+li {
+  margin: 5px 0px;
+}
+div.all-items {
+  margin-left: -20px;
+}
+div.pricing {
+  border: 1px solid black;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 10px 20px 30px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px;
+}
+div.model {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+img.pricing-img {
+  padding-top: 15px;
+  width: 150px;
+  height: 150px;
+}
+div.name {
+  text-transform: uppercase;
+  font-style: italic;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
+div.price {
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 1.7rem;
+}
+.price-btn {
+  padding: 5px 40px;
+}
+
+@media only screen and (max-width: 800px) {
+  div.description {
+    display: block;
+  }
+  body {
+    margin: 0px;
+  }
+  iframe {
+    margin-top: 20px;
+    width: 488px; 
+    height: 275px;
+  }
+  div.content {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  nav#nav-bar {
+    width: 60%;
+  }
+  input {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+}

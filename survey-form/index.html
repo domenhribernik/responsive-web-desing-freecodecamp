@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey form</title>
+</head>
+<body>
+  <div class="header">
+    <h1 id="title">My survey</h1>
+    <p id="description">Thank you for taking the time to answer</p>
+  </div><br>
+  <form action="#" id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+    <label for="age" id="number-label">Age:</label>
+    <input type="number" name="age" min="10" max="100" id="number" placeholder="Age" required>
+    <label for="day">Day of the week:</label>
+    <select name="day" id="dropdown">>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+    <label for="gender" class="inline">Gender:</label><br>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="gender" class="inline">Male</label><br>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="gender" class="inline">Female</label><br>
+    <input type="radio" name="gender" value="other" id="other">
+    <label for="gender" class="inline">Other</label><br>
+    <label for="language" class="inline">What is your favourite language?</label><br>
+    <input type="checkbox" name="language" value="C#">
+    <label for="language" class="inline">C#</label><br>
+    <input type="checkbox" name="language" value="Python">
+    <label for="language" class="inline">Python</label><br>
+    <input type="checkbox" name="language" value="JavaScript">
+    <label for="language" class="inline">JavaScript</label><br>
+    <input type="checkbox" name="language" value="PHP">
+    <label for="language" class="inline">PHP</label><br>
+    <input type="checkbox" name="language" value="Java">
+    <label for="language" class="inline">Java</label><br>
+    <input type="checkbox" name="language" value="C++">
+    <label for="language" class="inline">C++</label><br>
+    <input type="checkbox" name="language" value="Ruby">
+    <label for="language" class="inline">Ruby</label><br>
+    <label for="comment">Comment:</label>
+    <textarea name="comment" id="comment" cols="40" rows="7"></textarea>
+    <input type="submit" value="Submit" id="submit">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </form>
+</body>
+</html>
